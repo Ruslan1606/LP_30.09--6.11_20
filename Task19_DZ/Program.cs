@@ -53,6 +53,8 @@
 // {
 //     Console.WriteLine($"ОШИБКА: {number} - не является пятизначным");
 
+//  Вариант целочисленным делением
+
 
 Console.WriteLine("Введите число! ");
  int num = Convert.ToInt32(Console.ReadLine());
