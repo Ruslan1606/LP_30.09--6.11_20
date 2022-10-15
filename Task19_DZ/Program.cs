@@ -40,7 +40,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if (number >=10000 && number <=99999)
 {
-    if (number / 10000 == number % 10 && (number % 100) / 10 == (number % 1000) / 100)
+    if (number / 10000 == number % 10 && (number % 100) / 10 == (number % 10000) / 1000)
     {
         Console.WriteLine($"{number} - Палиндром");
     }
@@ -54,4 +54,3 @@ else
     Console.WriteLine($"{number} - Не является пятизначным числом");
 }
 
-// НЕ МОГУ ПОНЯТЬ ПОЧЕМУ НЕ ПРОХОДИТ!!!
