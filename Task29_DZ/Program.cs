@@ -6,7 +6,7 @@
 
 int[] FillArray(int num)
 {
-    int[] array = new int [num];
+    int[] array = new int[num];
     Random rnd = new Random();
     for (int i = 0; i < array.Length; i++)
     {
@@ -24,5 +24,8 @@ void PrintArray(int[] arr)
 }
 
 
-int[] myArr= FillArray(8);
+int[] myArr = FillArray(8);
 PrintArray(myArr);
+
+//Как сделать в скобках и через запятую не знаю!
+//ПОДСКАЖИТЕ.

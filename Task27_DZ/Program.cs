@@ -9,3 +9,22 @@
 // 9012 -> 12
 
 
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int sumNumbers = SumNumbers(number);
+Console.WriteLine($"Сумма цифр в числе {number} = {sumNumbers}");
+
+
+int SumNumbers(int num)
+{
+    int advance = 0;
+    int result = 0;
+    for (int i = 0; i < number; i++)
+    {
+        advance = num - num % 10;
+        result = result + (num - advance);
+        num = num / 10;
+    }
+    return result;
+}
