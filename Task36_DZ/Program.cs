@@ -30,16 +30,13 @@ void PrintArray(int[] array)
     Console.Write("]");
 }
 
-int[] array = CreateArrayRndInt(5, 1, 10);
+int[] array = CreateArrayRndInt(4, 1, 10);
 int sum = 0;
 
-// for (int i = 1; i < array.Length; i += 1)
-// {
-//     if (i % 2 != 0) sum += array[i];
-// }
-
-for (int i = 0; i < array.Length; i+=2)
-    sum = sum + array[i];
+for (int i = 1; i < array.Length; i += 1)
+{
+    if (i % 2 != 0) sum += array[i];
+}
 
 PrintArray(array);
 Console.WriteLine($" -> {sum}");
