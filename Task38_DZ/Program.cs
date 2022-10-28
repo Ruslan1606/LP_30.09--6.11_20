@@ -48,5 +48,6 @@ double DiffArray(double[] array)
 
 double[] arr1 = CreateArrayRndDouble(8, -9, 9);
 var result = DiffArray(arr1);
+result = Math.Round(result,2);
 PrintArrayDouble(arr1);
 Console.WriteLine($"{result}");
