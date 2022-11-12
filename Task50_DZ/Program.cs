@@ -21,9 +21,7 @@ int column = Convert.ToInt32(Console.ReadLine());
 int[,] numbers = new int[3, 4];
 
 
-if (line < numbers.GetLength(0) && column < numbers.GetLength(1))
-    Console.WriteLine(numbers[line, column]);
-else Console.WriteLine($"{line}{column} -> такого числа в массиве нет");
+
 
 
 void FillArray(int[,] array)
@@ -51,7 +49,10 @@ void PrintArray(int[,] array)
     Console.WriteLine();
 }
 
- 
+ if (line < numbers.GetLength(0) && column < numbers.GetLength(1))
+    Console.WriteLine(numbers[line, column]);
+else Console.WriteLine($"{line}{column} -> такого числа в массиве нет");
+
 int ReadInt(string message)
 {
     Console.Write(message);
