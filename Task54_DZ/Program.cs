@@ -57,7 +57,7 @@ void Sort(int[,] matrixArray, int rows, int cols) {
 
 int rows = 4;
 int cols = 4;
-int[,] matrixArray = CreateMatrixRndInt(rows, cols, 1, 9);
+int[,] matrixArray = CreateMatrixRndInt(rows, cols, 1, 10);
 PrintMatrix(matrixArray);
 Sort(matrixArray, rows, cols);
 Console.WriteLine();

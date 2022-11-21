@@ -33,19 +33,6 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void Sort(int[,] matrixArray, int rows, int cols) {
-  for (int i = 0; i < rows; i++) {
-    for (int k = 0; k < cols; k++)
-    for (int j = 0; j < cols - 1; j++){
-        if (matrixArray[i,j] < matrixArray[i,j + 1])  {       
-          int temp = 0;
-          temp = matrixArray[i,j];
-          matrixArray[i,j] = matrixArray[i,j + 1];
-          matrixArray[i,j + 1] = temp;
-        }
-    }
-  }
-}
 
 int rows = 4;
 int cols = 4;
