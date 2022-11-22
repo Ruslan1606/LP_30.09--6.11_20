@@ -84,6 +84,7 @@ int[,] array2D = CreateMatrixRndInt(3, 4, 1, 10);
 PrintMatrix(array2D);
 
 var result = ProcessArray(array2D);
+MidColumnMatrix(array2D);
 
 for (int i = 0; i < result.Length; i++)
 {
